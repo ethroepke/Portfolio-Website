@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ethan Roepke | Senior Design</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #0d1117;
+      color: #e6edf3;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    } 
+    h1, h2 {
+      color: #58a6ff;
+    }
+
+    .section {
+      margin-bottom: 50px;
+    }
+
+    .btn-custom {
+      background-color: #58a6ff;
+      color: #0d1117;
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .btn-custom:hover {
+      background-color: #1f6feb;
+      color: #fff;
+    }
+
+    .image-row {
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      margin: 30px 0;
+      flex-wrap: wrap;
+    }
+    .image-row img {
+      max-width: 300px;
+      border-radius: 10px;
+      border: 2px solid #30363d;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    .navbar {
+      background: linear-gradient(90deg, #0a0f1c, #141e30);
+    }
+    .navbar-brand, .nav-link {
+      color: #ffffff !important;
+      font-weight: 500;
+    }
+    .navbar-brand:hover, .nav-link:hover {
+      color: #ffffff !important;
+    }
+
+    footer {
+      background-color: #0a0f1c;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+    footer p {
+      margin: 0;
+      color: #c9d1d9;
+    }
+    footer a {
+      color: #58a6ff;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Cybersecurity Engineering Portfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="employment.html">Employment</a></li>
+        <li class="nav-item"><a class="nav-link" href="seniorDesign.html">Senior Design</a></li>
+        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="reflections.html">Reflections</a></li>
+        <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Page Content -->
+<div class="container mt-5">
+
+  <!-- Header -->
+  <div class="section text-center">
+    <h1>Senior Design Project</h1>
+    <h4>Collecting Feedlot Closeout Data with ISU Feedlot Monitor System</h4>
+    <p><strong>Client Company:</strong> Iowa Beef Center (ISU Extension)</p>
+    <p><strong>Client:</strong> Garland Dahlke</p>
+    <p><strong>Faculty Advisor:</strong> Dr. Ali Jannesari</p>
+    <a href="https://sdmay26-04.sd.ece.iastate.edu/" target="_blank" class="btn-custom">View Project Website</a>
+  </div>
+
+  <!-- Images -->
+  <div class="image-row">
+    <img src="img/iowaBeef.jpg" alt="Iowa Beef Logo">
+    <img src="img/appIowa.png" alt="ISU Feedlot Application">
+  </div>
+
+  <!-- Problem Statement -->
+  <div class="section">
+    <h2>Problem Statement</h2>
+    <p>
+      Iowa State uses feedlot closeout data for research, supported by a desktop application that farmers across the United States use to submit their data. 
+      Currently, the application’s data submission process does not work, and the software itself is outdated with limited support.  
+      Our goal is two-fold: first, to restore reliable data transfer functionality, and second, to modernize the application to ensure stability and long-term support.  
+      This is crucial for Iowa’s farming community—by fixing the feedlot data process, farmers will gain timely insights needed to thrive, strengthening the state’s agricultural backbone.
+    </p>
+  </div>
+
+  <!-- Intended Users -->
+  <div class="section">
+    <h2>Intended Users</h2>
+    <p>
+      The intended users of this project are farmers across the continental United States, along with ISU researchers and partner institutions.  
+      Iowa Beef has long provided quarterly reports with valuable feed insights to farmers statewide.  
+      Due to blocked networks and outdated systems, this process is currently halted.  
+      Restoring and improving the application will once again provide clear, consistent, and dependable reports—helping farmers succeed and ensuring researchers can collect and analyze essential data.
+    </p>
+  </div>
+
+  <!-- Technical Approach -->
+  <div class="section">
+    <h2>Technical Approach</h2>
+    <p>
+      The existing VB6 codebase will be migrated to modern languages such as VBA, Java, and Python for maintainability and longevity.  
+      Additionally, we are implementing a secure FTP system to allow client data submissions without being blocked by university network policies.  
+      These improvements will modernize the system and ensure that the data pipeline remains reliable well into the future.
+    </p>
+  </div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 Ethan Roepke | <a href="mailto:ethroepke@gmail.com">Contact Me</a></p>
+</footer>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

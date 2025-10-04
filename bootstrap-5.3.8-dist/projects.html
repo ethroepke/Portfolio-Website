@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Ethan Roepke</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #0d1117;
+      color: #e6edf3;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    h1, h2, h3 {
+      color: #ffffff;
+      font-weight: bold;
+    }
+    .navbar {
+      background: linear-gradient(90deg, #0a0f1c, #141e30);
+    }
+    .navbar-brand, .nav-link {
+      color: #ffffff !important;
+      font-weight: 500;
+    }
+    .navbar-brand:hover, .nav-link:hover {
+      color: #ffffff !important;
+    }
+    footer {
+      background-color: #161b22;
+      padding: 20px;
+      margin-top: 40px;
+      text-align: center;
+      color: #8b949e;
+    }
+    .card {
+      background-color: #161b22;
+      border: 1px solid #30363d;
+      margin-bottom: 30px;
+    }
+    .card-title {
+      color: #a3bffa;
+      margin-bottom: 15px;
+    }
+    .card-body p,
+    .card-body ul li {
+      color: #ffffff; /* readable text */
+    }
+    .card-body ul {
+      margin-left: 20px;
+    }
+    .page-intro {
+      text-align: center;
+      max-width: 800px;
+      margin: 40px auto 60px;
+      font-size: 1.2rem;
+      color: #cbd6f1;
+    }
+    .badge {
+      font-size: 0.8rem;
+      background-color: #30363d;
+      color: #58a6ff;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+ <!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Cybersecurity Engineering Portfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="employment.html">Employment</a></li>
+        <li class="nav-item"><a class="nav-link" href="seniorDesign.html">Senior Design</a></li>
+        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="reflections.html">Reflections</a></li>
+        <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- Page Intro -->
+  <header class="text-center my-5">
+    <h1>Projects</h1>
+    <p class="page-intro">
+      Below are selected academic and personal projects that highlight my skills in 
+      cybersecurity, programming, and applied problem-solving. Each project not only 
+      tested technical knowledge, but also creativity, adaptability, and teamwork.
+    </p>
+  </header>
+
+  <!-- Project Cards -->
+  <div class="container">
+
+    <!-- Steganography Lab -->
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <span class="badge">Course Project – CPRE 4360x</span>
+        <h3 class="card-title">Cybersecurity Steganography Lab (Virtual Machine Deployment)</h3>
+        <p>
+          This lab focused on <strong>steganography</strong>—the practice of hiding information inside files such as images or audio. 
+          I built a custom <strong>Ubuntu Linux virtual machine</strong> preloaded with analysis tools, allowing users to both embed 
+          and detect hidden data. The VM was designed as an interactive learning environment, so students could practice cyber-forensics.
+        </p>
+        <ul>
+          <li>Used tools such as <strong>OpenStego</strong>, <strong>StegDetect</strong>, and <strong>StegHide</strong> for encoding and detection.</li>
+          <li>Configured the VM to work across both <strong>Linux</strong> and <strong>Windows</strong> systems for accessibility.</li>
+          <li>Packaged the project into a reusable virtual machine for hands-on cybersecurity training.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Work Management App -->
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <span class="badge">Course Project – COMS 3090</span>
+        <h3 class="card-title">Work Management Mobile Application</h3>
+        <p>
+          As part of a team project, we developed a <strong>workplace management app</strong> to improve team communication and scheduling. 
+          The app was built with <strong>Android Studio</strong> (Java/Kotlin) on the front-end and a <strong>Spring Boot</strong> REST API on the back-end. 
+          A <strong>PostgreSQL database</strong> stored all employee data, time logs, and tasks.
+        </p>
+        <ul>
+          <li>Implemented real-time chat, scheduling, and time-tracking features.</li>
+          <li>Tested and validated endpoints with <strong>Postman</strong> to ensure reliability.</li>
+          <li>Designed UI screens with Android Studio XML layouts, balancing usability and clarity.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Face Detection -->
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <span class="badge">Personal Project</span>
+        <h3 class="card-title">Real-Time Face Detection and Recognition</h3>
+        <p>
+          This project explored computer vision by building a <strong>Python + OpenCV</strong> application that detects and recognizes faces 
+          in real-time using a webcam. I extended the project with an <strong>alert system</strong> that triggers audio notifications when 
+          unfamiliar faces are detected, demonstrating a potential application in security systems.
+        </p>
+        <ul>
+          <li>Trained the program with sample face datasets for recognition accuracy.</li>
+          <li>Integrated simple <strong>SQLite database logic</strong> for logging recognized individuals.</li>
+          <li>Explored extending the project toward a web-deployed recognition service.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- TryHackMe -->
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <span class="badge">Personal Project</span>
+        <h3 class="card-title">TryHackMe Cybersecurity Labs</h3>
+        <p>
+          Outside of coursework, I have spent extensive time on <strong>TryHackMe</strong>, a platform for practicing cybersecurity skills. 
+          These labs simulate real-world challenges across networking, web exploitation, privilege escalation, and cryptography.
+        </p>
+        <ul>
+          <li>Completed guided labs and capture-the-flag challenges covering multiple security domains.</li>
+          <li>Applied skills such as <strong>packet analysis</strong>, <strong>web penetration testing</strong>, and <strong>reverse engineering</strong>.</li>
+          <li>Built confidence in independent problem-solving and applying theoretical knowledge to hands-on tasks.</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Ethan Roepke | Projects</p>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
